@@ -1,0 +1,6 @@
+<%# 入力フォームを初期化 %>
+$("textarea").val("");
+$("input").val("");
+<%# モーダルを閉じる %>
+$('#exampleModal').modal('hide');
+$('.recipes').html("<%= escape_javascript(render 'recipes', recipes: @recipes) %>")
